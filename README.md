@@ -45,3 +45,7 @@ A text-based movie search engine built using **PySpark** and **Databricks**, lev
 
 **Matched Terms:** space, exploration, mission, wormhole
 
+---
+Note: This project was originally created during academic coursework using public datasets and entirely self-written code. It is shared solely for skill demonstration and not intended for academic reuse.
+
+
