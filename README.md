@@ -1,11 +1,47 @@
-# TF-IDF-and-Cosine-Similarity
+## 🎬 Movie Plot Search Engine — TF-IDF & Cosine Similarity
 
-Built a movie plot search engine using PySpark and Databricks, applying TF-IDF and Cosine Similarity techniques to rank movie plots based on relevance to user queries.
+**Databricks Notebook Link:** [View Project](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2750839131378492/2703843189920629/8689822275567822/latest.html)
 
-Processed and cleaned a large dataset from Carnegie Movie Summary Corpus using MapReduce, removing stopwords and constructing a tf-idf matrix for each term in the document.
+---
 
-Implemented a search functionality that supports both single and multi-term queries, returning top 10 most relevant movie plots based on cosine similarity calculations.
+### 📌 Overview
 
-Utilized metadata mapping to transform Wikipedia movie IDs into movie names for user-friendly results, enhancing the usability of the search engine.
+A text-based movie search engine built using **PySpark** and **Databricks**, leveraging **TF-IDF vectorization** and **Cosine Similarity** to rank plot summaries by relevance to user queries. The project processes a large-scale dataset from the **Carnegie Movie Summary Corpus**.
 
-Databricks link-https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2750839131378492/2703843189920629/8689822275567822/latest.html
+---
+
+### 🔧 Tools & Technologies
+
+* **Platform:** Databricks
+* **Processing:** PySpark, MapReduce
+* **Text Vectorization:** TF-IDF
+* **Similarity Metric:** Cosine Similarity
+* **Dataset:** Carnegie Mellon Movie Summary Corpus
+
+---
+
+### ⚙️ Key Features
+
+* Cleaned and preprocessed movie plot data using **PySpark**.
+* Generated a **TF-IDF matrix** to represent document-term relevance.
+* Implemented **Cosine Similarity** to compare user queries with plot vectors.
+* Enabled flexible search with both **single-term and multi-term queries**.
+* Returned the **Top 10 most relevant movie plots** per search query.
+
+---
+
+### 🧠 Enhancements
+
+* Mapped **Wikipedia movie IDs** to human-readable names using metadata, improving usability.
+* Designed the pipeline with modular MapReduce-style transformations for scalability.
+
+---
+
+### 🔍 Example Output
+
+**Query:** `space exploration mission`
+
+**Top Result:** *Interstellar*
+
+**Matched Terms:** space, exploration, mission, wormhole
+
